@@ -18,7 +18,8 @@ const routes = [
     {
         path: '/companies/edit/:id',
         name: 'companies.edit',
-        component: CompaniesEdit
+        component: CompaniesEdit,
+        props: true
     }
 ]
 
