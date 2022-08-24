@@ -14,46 +14,46 @@
             </div>
         </div>
 
-        <table class="min-w-full border divide-y divide-gray-200">
+        <table class="auto">
             <thead>
                 <tr>
-                    <th class="px-6 py-3 bg-gray-50">
+                    <th>
                         <span
                             class="text-xs font-medium tracking-wider leading-4 text-left text-gray-500 uppercase"
                             >Name</span
                         >
                     </th>
-                    <th class="px-6 py-3 bg-gray-50">
+                    <th>
                         <span
                             class="text-xs font-medium tracking-wider leading-4 text-left text-gray-500 uppercase"
                             >Email</span
                         >
                     </th>
-                    <th class="px-6 py-3 bg-gray-50">
+                    <th>
                         <span
                             class="text-xs font-medium tracking-wider leading-4 text-left text-gray-500 uppercase"
                             >Address</span
                         >
                     </th>
-                    <th class="px-6 py-3 bg-gray-50">
+                    <th>
                         <span
                             class="text-xs font-medium tracking-wider leading-4 text-left text-gray-500 uppercase"
                             >Website</span
                         >
                     </th>
-                    <th class="px-6 py-3 bg-gray-50">
+                    <th>
                         <span
                             class="text-xs font-medium tracking-wider leading-4 text-left text-gray-500 uppercase"
                             >Created Time</span
                         >
                     </th>
-                    <th class="px-6 py-3 bg-gray-50">
+                    <th>
                         <span
                             class="text-xs font-medium tracking-wider leading-4 text-left text-gray-500 uppercase"
                             >Updated Time</span
                         >
                     </th>
-                    <th class="px-6 py-3 w-full">
+                    <th>
                         <span
                             class="text-xs font-medium tracking-wider leading-4 text-left text-gray-500 uppercase"
                             >Actions</span
@@ -62,43 +62,29 @@
                 </tr>
             </thead>
 
-            <tbody class="bg-white divide-y divide-gray-200 divide-solid">
+            <tbody>
                 <template v-for="item in companies" :key="item.id">
-                    <tr class="bg-white">
-                        <td
-                            class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap"
-                        >
+                    <tr>
+                        <td>
                             {{ item.name }}
                         </td>
-                        <td
-                            class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap"
-                        >
+                        <td>
                             {{ item.email }}
                         </td>
-                        <td
-                            class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap"
-                        >
+                        <td>
                             {{ item.address }}
                         </td>
-                        <td
-                            class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap"
-                        >
+                        <td>
                             {{ item.website }}
                         </td>
-                        <td
-                            class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap"
-                        >
+                        <td>
                             {{ item.created_at }}
                         </td>
-                        <td
-                            class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap"
-                        >
+                        <td>
                             {{ item.updated_at }}
                         </td>
 
-                        <td
-                            class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap"
-                        >
+                        <td>
                             <router-link
                                 :to="{
                                     name: 'companies.edit',
